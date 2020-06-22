@@ -62,7 +62,7 @@ var Users_1 = __importDefault(require("./routes/Users"));
 app.use('/users', Users_1.default);
 // app.use('/agency', Agencies);
 mongoose_1.default
-    .connect(process.env.MONGOURL || 'mongodb://localhost/ecommerce_app', {
+    .connect(process.env.MONGOURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
